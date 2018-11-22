@@ -1,0 +1,8 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@font-face {
+	font-family:'Miama';
+	src: url(../fonts/miama/Miama.ttf);
+	src: url(../fonts/miama/Miama.otf)
+	
+}

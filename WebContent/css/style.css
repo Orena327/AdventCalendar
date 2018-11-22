@@ -1,0 +1,262 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Parisienne&subset=latin-ext');
+
+* {
+	margin:0;
+	padding:0;
+	font-family:Quicksand;
+}
+
+.main {
+	box-sizing: border-box;
+	width:60%;
+	margin-top:-2%;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(../img/bg-main.png);
+	background-size:cover;
+}
+
+/******* FONTY *******/
+
+h1,h2,.backNav a {
+	font-family:"Dancing Script",Miama,cursive;
+	font-weight:700;
+	color:#181d36;
+}
+h1 {
+	text-align:center;
+	width:20rem;
+	background-color:#fff;
+	border-radius:30px;
+	-webkit-border-radius:30px;
+	-moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+	padding: 0.3em 1em;
+	white-space: nowrap;
+}
+
+h2 {
+	padding-top:2rem;
+	font-size:190%;
+}
+.container__title{
+	max-width:40rem;
+}
+.shortText {
+	display:inline-block;
+	width:40rem;	
+	background-color:#fff;
+	border-radius:30px;
+	-webkit-border-radius:30px;
+	-moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+	padding: 1em 1.5em;
+	font-weight: light;
+}	
+
+p {
+	padding:1rem;
+	margin:1rem auto;
+	width:90%;
+}
+	
+p,.h3__longText {	
+	font-family:Quicksand;
+	color:#181d36;
+	text-align: justify;
+}
+
+.center {
+	text-align: center;
+	margin:auto;
+}
+.left {float: left;}
+.right {float: right;}
+.clear {clear:both;}
+.flex {
+	display:flex;
+	justify-content:center;
+	/*width: 100%;*/
+    margin: auto;
+}
+
+/********************/
+ a { 
+	text-decoration:none;
+	color:#181d36;
+}
+.backNav a {
+	font-size:150%;
+	text-decoration:none;
+	color:#181d36;
+	padding:0.5em 1em;	
+	background-image: url(../img/gold-button.png)
+}
+.box__backNav {
+	width:100%;
+	backgroung-image:url(img/bg-main.png);
+	padding-top:1rem;
+	padding-bottom:1rem;
+}
+.nav{
+	
+}
+.backNav {
+	width:97%;
+	background: #fff;
+	margin-top:5%;/*marginy 7 */
+	margin-bottom:5%;	
+	padding:1rem;
+	display:flex;
+}
+
+.backNav ul {
+	text-align: center;
+	display: flex;
+	width:31em;/*40rem*/
+}
+
+.backNav ul li {
+	display: inline-block;
+	list-style-type:none;
+	justify-content:center;
+	margin-left:5%;
+	margin-right:5%;
+}
+
+.linkList {
+	width:90%;
+}
+
+.linkList ul li {
+	display: block;
+	list-style-type:none;
+	justify-content:center;
+	margin-left:5%;
+	margin-right:5%;
+	white-space:nowrap;
+	padding: 0.5rem;
+}
+.linkList ul {
+	margin-top:1rem;
+}
+.linkList__ul {
+/*margin-top:4rem;	*/
+}
+
+.star button:hover {/* prozatím nefunkční, */
+	filter:drop-shadow(5px 5px 3px gray);
+	background-image:url(../img/gold-star-h-1.png);
+}
+/*img {max-width: 100%;}*/
+.person {
+    max-height: 15rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 2rem;
+}
+
+figcaption {
+	text-align:center;
+	font-size:75%;
+}
+
+figure{	
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;	
+}
+
+.container,.container2 {
+	background-color:#fff;
+	border-radius:20px 20px;
+	-webkit-border-radius:20px 20px;
+	-moz-border-radius: 20px 20px;
+    -ms-border-radius: 20px 20px;
+    -o-border-radius: 20px 20px;
+	margin:auto;
+}
+.container {
+	width:100%;
+}
+.container2 {	
+	min-height: 43rem;
+	width: 90%;
+}
+
+.box, box2 {
+	text-align: center;
+	float:left;
+	margin-top: 1rem;
+}
+
+.box {width:50%;}
+.box2 {
+	width:30%;
+	display: flex;}
+.box3 {
+	width:33%;
+	float:left;
+}
+
+.box3 li {
+	display:flex;
+	list-style-type:none;
+	justify-content:center;
+}
+
+.star {
+	width:6rem;
+	height:auto;
+	padding:0.5rem;
+	margin:0.5rem 0.7rem;
+	box-shadow:none;
+	border:none;
+	background:none;
+}
+
+.star img {
+	width:7rem;
+}
+
+.whiteStar {
+	margin-left:1rem;
+	margin-right:1rem;
+	max-width:50%;
+	height:auto;
+}
+
+.item {	
+	justify-content:space-around;
+}
+
+.footer p {
+	margin:auto;
+	padding-top:1.5rem;	
+	padding-bottom:1.5rem;
+	text-align:center;
+}
+
+.footer a {
+	padding:none;
+	font-weight: bold;
+}
+
+.thanks {
+	padding-bottom:1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+

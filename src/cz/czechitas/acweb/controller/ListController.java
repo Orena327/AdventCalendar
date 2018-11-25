@@ -16,8 +16,8 @@ public class ListController {
 	private Dao dao = new Dao();
 
 	public void handle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("listController");
-		LocalDate a = LocalDate.now(); // zjistí dnesní datum a vybere z nìho jen èíslo dne
+		
+		LocalDate a = LocalDate.now(); 
 		int monthDay = (a.getDayOfMonth());
 
 		List<String> recepty = dao.listRecipes(monthDay);

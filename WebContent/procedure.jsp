@@ -31,6 +31,10 @@
 
 				<%
 					Recipe recept = (Recipe) request.getAttribute("recept");
+				if(recept==null){%>
+					<jsp:forward page="error.jsp"></jsp:forward>
+					<%
+				}
 				%>
 
 				<%=recept.getName()%>

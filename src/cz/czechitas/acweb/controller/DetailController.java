@@ -8,24 +8,30 @@ import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import cz.czechitas.acweb.bean.Recipe;
 import cz.czechitas.acweb.dao.Dao;
 
 public class DetailController {
+	private final Logger logger = LogManager.getLogger(getClass());
 	private Dao dao = new Dao();
 
 	public void handle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		{
+			logger.debug("handle");
 
 			LocalDate a = LocalDate.now();
 			int monthDay = (a.getDayOfMonth());
 			String action = request.getParameter("action");
 			String cisloDne = action.substring(3);
-			System.out.println(cisloDne);
+			logger.debug("Èíslo dne = "+ cisloDne);
 
 			int aInt = Integer.parseInt(cisloDne);
 
 			if (aInt > monthDay) {
+				logger.debug("Den je vìtší než "+monthDay);
 
 				request.getServletContext().getRequestDispatcher("/error.jsp").forward(request, response);
 				return;
@@ -41,8 +47,5 @@ public class DetailController {
 
 	}
 
-	private static ServletRequest getServletConfig() {
 
-		return null;
-	}
 }

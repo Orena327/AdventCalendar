@@ -34,6 +34,11 @@
 			<ul class="linkList__ul">
 				<div class="box">
 				<% ArrayList<String> recepty = (ArrayList<String>) request.getAttribute("recepty");
+				if(recepty ==null){%>
+				<jsp:forward page="error.jsp"></jsp:forward>
+				<%
+			}
+			
 				int den = 0;
         			for(String recept : recepty){
         				den++;

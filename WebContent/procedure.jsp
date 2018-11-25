@@ -47,7 +47,7 @@
 							if (recept.getSuroviny() != null && recept.getSuroviny().size() > 0) {
 								for (String surovina : recept.getSuroviny()) {
 						%>
-						<li><%= *surovina%></li>
+						<li><%=surovina%></li>
 						<%
 							}
 							}

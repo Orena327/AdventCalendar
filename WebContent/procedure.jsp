@@ -17,6 +17,12 @@
 	media="screen">
 <link rel="stylesheet" type="text/css" href="css/resize.css"
 	media="screen">
+<link rel="stylesheet" href="css/lightbox.css" type="text/css"
+	media="screen" />
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/jquery-ui-1.8.18.custom.min.js"></script>
+<script src="js/jquery.smooth-scroll.min.js"></script>
+<script src="js/lightbox.js"></script>
 <link
 	href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Parisienne&amp;subset=latin-ext"
 	rel="stylesheet">
@@ -56,10 +62,16 @@
 							}
 							}
 						%>
+				</div>
+				<div class="box4">
+					<div class="img"><a href="#" rel="lightbox[procedure]"><img src="#" alt="" title=""/>Nějaký náhled obrázku</a></div>
+					<div class="img"><a href="#" rel="lightbox[procedure]"><img src="#" alt="" title=""/>Nějaký náhled obrázku</a></div>
+				</div>
 					
 				</ul>
+
 				<div class="clear"></div>
-			</div>
+			
 			<h2 class="center">Postup</h2>
 			<div>
 				<%

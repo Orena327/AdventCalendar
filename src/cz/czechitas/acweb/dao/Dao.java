@@ -21,11 +21,11 @@ public class Dao {
 		Recipe rec = new Recipe();
 		DataSource ds = getDataSource();
 		try (Connection con = ds.getConnection();
-				PreparedStatement stmt = con.prepareStatement("SELECT * FROM adventnikalendar.recept WHERE id=?");
+				PreparedStatement stmt = con.prepareStatement("SELECT * FROM recept WHERE id=?");
 				PreparedStatement stmta = con
-						.prepareStatement("SELECT * FROM adventnikalendar.suroviny WHERE recept_id=?");
+						.prepareStatement("SELECT * FROM suroviny WHERE recept_id=? ORDER BY id ASC");
 				PreparedStatement stmtb = con
-						.prepareStatement("SELECT * FROM adventnikalendar.postup WHERE recept_id=?")) {
+						.prepareStatement("SELECT * FROM postup WHERE recept_id=?")) {
 			stmt.setInt(1, day);
 			stmta.setInt(1, day);
 			stmtb.setInt(1, day);
@@ -58,7 +58,7 @@ public class Dao {
 		ArrayList<String> list = new ArrayList<>();
 		DataSource ds = getDataSource();
 		try (Connection con = ds.getConnection();
-				PreparedStatement stmt = con.prepareStatement("SELECT * FROM adventnikalendar.recept WHERE id <=?")) {
+				PreparedStatement stmt = con.prepareStatement("SELECT * FROM recept WHERE id <=? ORDER BY id ASC")) {
 			stmt.setInt(1, recipeDay);
 			ResultSet rs = stmt.executeQuery();
 			while (rs.next()) {

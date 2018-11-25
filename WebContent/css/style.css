@@ -151,7 +151,7 @@ p,.h3__longText {
 	margin-top:3rem;
 }
 
-.star button:hover {/* prozatím nefunkční, */
+.star:hover {/* prozatím nefunkční, */
 	filter:drop-shadow(5px 5px 3px gray);
 	background-image:url(../img/gold-star-h-1.png);
 }

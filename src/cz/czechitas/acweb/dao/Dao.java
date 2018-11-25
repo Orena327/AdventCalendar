@@ -80,7 +80,7 @@ public class Dao {
 			Context ctx = new InitialContext();
 			return (DataSource) ctx.lookup("java:/comp/env/adventnikalendarResource");
 		} catch (NamingException e) {
-			logger.error("getRecipe failed", e);
+			logger.error("getDataSource failed", e);
 		}
 		return null;
 	}

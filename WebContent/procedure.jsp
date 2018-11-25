@@ -51,47 +51,22 @@
 						<%
 							}
 							}
-						%>
-
-						<%-- <li>Něco<a
-							href="#prikazDodatabaze?action=day1<%="polozka.get(id = 1)"%>"></a></li>
-						<li>Něco<a
-							href="#prikazDodatabaze?action=day1<%="polozka.get(id = 2))"%>"></a></li>
-						<li>Něco<a
-							href="#prikazDodatabaze?action=day1<%="polozka.get(id = 3))"%>"></a></li>
-						<li>Něco<a
-							href="#prikazDodatabaze?action=day1<%="polozka.get(id = 4))"%>"></a></li>
-						<li>Něco<a
-							href="#prikazDodatabaze?action=day1<%="polozka.get(id = 5))"%>"></a></li> --%>
-					</div>
-					<%-- 	<div class="box3">
-						<li>Něco<a
-							href="#prikazDodatabaze?action=day1<%="polozka.get(id = 6))"%>"></a></li>
-						<li>Něco<a
-							href="#prikazDodatabaze?action=day1<%="polozka.get(id = 7))"%>"></a></li>
-						<li>Něco<a
-							href="#prikazDodatabaze?action=day1<%="polozka.get(id = 8))"%>"></a></li>
-						<li>Něco<a
-							href="#prikazDodatabaze?action=day1<%="polozka.get(id = 9))"%>"></a></li>
-						<li>Něco<a
-							href="#prikazDodatabaze?action=day1<%="polozka.get(id = 10))"%>"></a></li>
-					</div> --%>
-					<!-- <div class="box2">Obrázek nebo nic</div> -->
+						%>	
 				</ul>
 				<div class="clear"></div>
 			</div>
 			<h2 class="center">Postup</h2>
 			<div>
-			<%
+				<%
 							if (recept.getPostup() != null && recept.getPostup().size() > 0) {
 								for (String odstavec : recept.getPostup()) {
 						%>
-						<p><%=odstavec%></p>
-						<%
+				<p><%=odstavec%></p>
+				<%
 							}
 							}
 						%>
-				
+
 			</div>
 		</div>
 		<%@ include file="footer.jsp"%>

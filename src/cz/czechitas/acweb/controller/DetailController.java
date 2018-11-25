@@ -9,10 +9,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import cz.czechitas.acweb.bean.Recipe;
+import cz.czechitas.acweb.dao.Dao;
 
 
 public class DetailController {
-	public static void handle(HttpServletRequest request, HttpServletResponse response)
+	private  Dao dao = new Dao();
+	public void handle(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		{
 			System.out.println("detailController");
@@ -30,13 +32,8 @@ public class DetailController {
 				return;
 			}
 			Recipe recept = new Recipe();
-			recept.setName("Vánoèní štola");
-			recept.getSuroviny().add("mouka");
-			recept.getSuroviny().add("vejce");
-			recept.getSuroviny().add("maslo");
-			recept.getPostup().add("1.krok");
-			recept.getPostup().add("2.krok");
-			recept.getPostup().add("3.krok");
+			recept=dao.getRecipe(aInt);
+			
 			
 			request.setAttribute("recept", recept);
 		

@@ -207,7 +207,7 @@ figure{
 
 .box3 li {
 	display:flex;
-	justify-content:center;
+	padding-left: 2rem;
 }
 
 .star {

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="warn">
+    <Properties>
+        <Property name="basePath">${sys:catalina.home}/logs</Property>
+        <Property name="appPath">${sys:catalina.home}/webapps/AdventCalendar</Property>
+    </Properties>
+ 
+    <Appenders>
+        <RollingFile name="fileLogger" fileName="${basePath}/myapp.log" filePattern="${basePath}/myapp-%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+        </RollingFile>
+        <RollingFile name="appLogger" fileName="${appPath}/ac.log" filePattern="${appPath}/ac-%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <pattern>%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true" />
+            </Policies>
+        </RollingFile>
+ 
+        <Console name="console" target="SYSTEM_OUT">
+            <PatternLayout   pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+    </Appenders>
+    <Loggers>
+        <Logger name="cz.czechitas.acweb" level="debug" additivity="true">
+            <appender-ref ref="fileLogger" level="debug" />
+            <appender-ref ref="appLogger" level="debug" />
+        </Logger>
+        <Root level="info" additivity="false">
+            <appender-ref ref="console" />
+        </Root>
+    </Loggers>
+</Configuration>

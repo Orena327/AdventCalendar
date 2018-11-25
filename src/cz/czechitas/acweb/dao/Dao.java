@@ -12,9 +12,13 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import cz.czechitas.acweb.bean.Recipe;
 
 public class Dao {
+	private final Logger logger = LogManager.getLogger(getClass());
 
 	public Recipe getRecipe(int day) {
 
@@ -47,7 +51,7 @@ public class Dao {
 			}
 
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error("getRecipe failed", e);
 		}
 
 		return rec;
@@ -65,7 +69,7 @@ public class Dao {
 				list.add(rs.getString("nazev"));
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.error("listRecipes failed", e);
 		}
 
 		return list;
@@ -76,7 +80,7 @@ public class Dao {
 			Context ctx = new InitialContext();
 			return (DataSource) ctx.lookup("java:/comp/env/adventnikalendarResource");
 		} catch (NamingException e) {
-			e.printStackTrace();
+			logger.error("getRecipe failed", e);
 		}
 		return null;
 	}

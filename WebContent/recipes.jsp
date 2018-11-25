@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ page import="java.util.ArrayList"%>	
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,70 +29,32 @@
 			ti vydržely až do&nbsp;Vánočního dne, tak neváhej a&nbsp;pusť se
 			do&nbsp;toho rovnou hned.</p>
 		<div class="linkList container2">
+		
+		       
 			<ul class="linkList__ul">
 				<div class="box">
-					<li>Recept č. 1: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day1)"%>"></a></li>
-					<li>Recept č. 2: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day2)"%>"></a></li>
-					<li>Recept č. 3: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day3)"%>"></a></li>
+				<% ArrayList<String> recepty = (ArrayList<String>) request.getAttribute("recepty");
+				int den = 0;
+        			for(String recept : recepty){
+        				den++;
+        				if(den % 2 == 1){      					
+        		%>	
+        			
+        		
+					<li>Recept č. <%= den %>: <a
+						href="ActionServlet?action=day<%="nadpis.get(id = day1)"%>"><%= recept %></a></li>
+						<% }}%>
 				</div>
 				<div class="box">
-					<li>Recept č. 4: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day4)"%>"></a></li>
-					<li>Recept č. 5: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day5)"%>"></a></li>
-					<li>Recept č. 6: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day6)"%>"></a></li>
-				</div>
-				<div class="box">
-					<li>Recept č. 7: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day7)"%>"></a></li>
-					<li>Recept č. 8: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day8)"%>"></a></li>
-					<li>Recept č. 9: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day9)"%>"></a></li>
-				</div>
-				<div class="box">
-					<li>Recept č. 10: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day10)"%>"></a></li>
-					<li>Recept č. 11: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day11)"%>"></a></li>
-					<li>Recept č. 12: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day12)"%>"></a></li>
-				</div>
-				<div class="box">
-					<li>Recept č. 13: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day13)"%>"></a></li>
-					<li>Recept č. 14: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day14)"%>"></a></li>
-					<li>Recept č. 15: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day15)"%>"></a></li>
-				</div>
-				<div class="box">
-					<li>Recept č. 16: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day16)"%>"></a></li>
-					<li>Recept č. 17: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day17)"%>"></a></li>
-					<li>Recept č. 18: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day18)"%>"></a></li>
-				</div>
-				<div class="box">
-					<li>Recept č. 19: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day19)"%>"></a></li>
-					<li>Recept č. 20: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day20)"%>"></a></li>
-					<li>Recept č. 21: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day21)"%>"></a></li>
-				</div>
-				<div class="box">
-					<li>Recept č. 22: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day22)"%>"></a></li>
-					<li>Recept č. 23: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day23)"%>"></a></li>
-					<li>Recept č. 24: <a action="ActionServlet"
-						href="ActionServlet?action=day<%="nadpis.get(id = day24)"%>"></a></li>
+				<% 
+					den = 0;
+        			for(String recept : recepty){
+        				den++;
+        				if(den % 2 == 0){      					
+        		%>
+					<li>Recept č. <%= den %>: <a
+						href="ActionServlet?action=day<%="nadpis.get(id = day1)"%>"><%= recept %></a></li>
+						<% }}%>
 				</div>
 			</ul>
 		</div>

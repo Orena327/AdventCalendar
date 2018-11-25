@@ -25,7 +25,7 @@
 		</div>
 		<p></p>
 		<div class="container2"> <!-- Písmo zarovnat na střed a zvětšit. -->
-		<p>
+		<p class="center">
 		Ještě nenastal ten správný den, do kalendáře se znovu podívej. 
 		Vrať se tedy znovu až nastane správný čas, na dnešní den už recept máš.		
 		</p>

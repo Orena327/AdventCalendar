@@ -42,7 +42,7 @@
         			
         		
 					<li>Recept č. <%= den %>: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day1)"%>"><%= recept %></a></li>
+						href="ActionServlet?action=day<%=den %>"><%= recept %></a></li>
 						<% }}%>
 				</div>
 				<div class="box">
@@ -53,7 +53,7 @@
         				if(den % 2 == 0){      					
         		%>
 					<li>Recept č. <%= den %>: <a
-						href="ActionServlet?action=day<%="nadpis.get(id = day1)"%>"><%= recept %></a></li>
+						href="ActionServlet?action=day<%=den %>"><%= recept %></a></li>
 						<% }}%>
 				</div>
 			</ul>

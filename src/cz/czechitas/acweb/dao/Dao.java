@@ -36,6 +36,7 @@ public class Dao {
 			ResultSet rs = stmt.executeQuery();
 			if (rs.next()) {
 				rec.setName(rs.getString("nazev"));
+				rec.setId(day);
 
 				ResultSet rsa = stmta.executeQuery();
 				while (rsa.next()) {

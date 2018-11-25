@@ -24,8 +24,14 @@
 			<img class="whiteStar" src="img/white-star.png" alt="Bílá hvězda">
 		</div>
 		<p></p>
-		<div class="container2">
-		
+		<div class="container2"> <!-- Písmo zarovnat na střed a zvětšit. -->
+		<p class="center">
+		Ještě nenastal ten správný den, do kalendáře se znovu podívej. 
+		Vrať se tedy znovu až nastane správný čas, na dnešní den už recept máš.		
+		</p>
+		<p class="center">
+		<img src="https://media.giphy.com/media/3o752nMBSX5M1fi5G0/giphy.gif">
+		</p>
 		</div>
 		<%@ include file="footer.jsp"%>
 

@@ -11,20 +11,19 @@ import javax.servlet.http.HttpServletResponse;
 import cz.czechitas.acweb.bean.Recipe;
 import cz.czechitas.acweb.dao.Dao;
 
-
 public class DetailController {
-	private  Dao dao = new Dao();
-	public void handle(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+	private Dao dao = new Dao();
+
+	public void handle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		{
-			System.out.println("detailController");
-			LocalDate a = LocalDate.now(); // zjistí dnesní datum a vybere z nìho jen èíslo dne
+
+			LocalDate a = LocalDate.now();
 			int monthDay = (a.getDayOfMonth());
-			String action = request.getParameter("action"); // oøez stringu
+			String action = request.getParameter("action");
 			String cisloDne = action.substring(3);
 			System.out.println(cisloDne);
 
-			int aInt = Integer.parseInt(cisloDne); // pøevedení string na int
+			int aInt = Integer.parseInt(cisloDne);
 
 			if (aInt > monthDay) {
 
@@ -32,12 +31,9 @@ public class DetailController {
 				return;
 			}
 			Recipe recept = new Recipe();
-			recept=dao.getRecipe(aInt);
-			
-			
+			recept = dao.getRecipe(aInt);
+
 			request.setAttribute("recept", recept);
-		
-			
 
 			request.getServletContext().getRequestDispatcher("/procedure.jsp").forward(request, response);
 
@@ -46,7 +42,7 @@ public class DetailController {
 	}
 
 	private static ServletRequest getServletConfig() {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 }

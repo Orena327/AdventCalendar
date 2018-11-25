@@ -51,21 +51,22 @@
 						<%
 							}
 							}
-						%>	
+						%>
+					
 				</ul>
 				<div class="clear"></div>
 			</div>
 			<h2 class="center">Postup</h2>
 			<div>
 				<%
-							if (recept.getPostup() != null && recept.getPostup().size() > 0) {
-								for (String odstavec : recept.getPostup()) {
-						%>
+					if (recept.getPostup() != null && recept.getPostup().size() > 0) {
+						for (String odstavec : recept.getPostup()) {
+				%>
 				<p><%=odstavec%></p>
 				<%
-							}
-							}
-						%>
+					}
+					}
+				%>
 
 			</div>
 		</div>

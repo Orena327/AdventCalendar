@@ -22,8 +22,8 @@ public class ListController {
 	public void handle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		logger.debug("handle");
 		
-		LocalDate a = LocalDate.now(); 
-		int monthDay = (a.getDayOfMonth());
+		LocalDate day = LocalDate.now(); 
+		int monthDay = (day.getDayOfMonth());
 		logger.debug("»Ìslo dne = "+ monthDay);
 
 

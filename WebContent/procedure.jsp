@@ -55,9 +55,9 @@
 					<div class="box3">
 						<%
 							if (recept.getSuroviny() != null && recept.getSuroviny().size() > 0) {
-								for (String surovina : recept.getSuroviny()) {
+								for (String ingredient : recept.getSuroviny()) {
 						%>
-						<li><%=surovina%></li>
+						<li><%=ingredient%></li>
 						<%
 							}
 							}
@@ -76,9 +76,9 @@
 			<div>
 				<%
 					if (recept.getPostup() != null && recept.getPostup().size() > 0) {
-						for (String odstavec : recept.getPostup()) {
+						for (String paragraph : recept.getPostup()) {
 				%>
-				<p><%=odstavec%></p>
+				<p><%=paragraph%></p>
 				<%
 					}
 					}

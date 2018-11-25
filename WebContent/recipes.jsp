@@ -39,26 +39,26 @@
 				<%
 			}
 			
-				int den = 0;
+				int day = 0;
         			for(String recept : recepty){
-        				den++;
-        				if(den % 2 == 1){      					
+        				day++;
+        				if(day % 2 == 1){      					
         		%>	
         			
         		
-					<li>Recept č. <%= den %>: <a
-						href="ActionServlet?action=day<%=den %>"><%= recept %></a></li>
+					<li>Recept č. <%= day %>: <a
+						href="ActionServlet?action=day<%=day %>"><%= recept %></a></li>
 						<% }}%>
 				</div>
 				<div class="box">
 				<% 
-					den = 0;
+					day = 0;
         			for(String recept : recepty){
-        				den++;
-        				if(den % 2 == 0){      					
+        				day++;
+        				if(day % 2 == 0){      					
         		%>
-					<li>Recept č. <%= den %>: <a
-						href="ActionServlet?action=day<%=den %>"><%= recept %></a></li>
+					<li>Recept č. <%= day %>: <a
+						href="ActionServlet?action=day<%=day %>"><%= recept %></a></li>
 						<% }}%>
 				</div>
 			</ul>

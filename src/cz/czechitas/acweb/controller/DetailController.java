@@ -25,19 +25,19 @@ public class DetailController {
 			LocalDate a = LocalDate.now();
 			int monthDay = (a.getDayOfMonth());
 			String action = request.getParameter("action");
-			String cisloDne = action.substring(3);
-			logger.debug("Èíslo dne = "+ cisloDne);
+			String dayNumber = action.substring(3);
+			logger.debug("Èíslo dne = "+ dayNumber);
 
-			int aInt = Integer.parseInt(cisloDne);
+			int day = Integer.parseInt(dayNumber);
 
-			if (aInt > monthDay) {
+			if (day > monthDay) {
 				logger.debug("Den je vìtší než "+monthDay);
 
 				request.getServletContext().getRequestDispatcher("/error.jsp").forward(request, response);
 				return;
 			}
 			Recipe recept = new Recipe();
-			recept = dao.getRecipe(aInt);
+			recept = dao.getRecipe(day);
 
 			request.setAttribute("recept", recept);
 

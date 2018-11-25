@@ -201,8 +201,8 @@ figure{
 	width:30%;
 	display: flex;}
 .box3 {
-	width:33%;
-	float:left;
+	width: 60%;
+    margin:1.5rem auto 0;
 }
 
 .box3 li {

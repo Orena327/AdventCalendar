@@ -191,7 +191,7 @@ figure{
 }
 
 .box, box2 {
-	text-align: center;
+	text-align: left;
 	float:left;
 	margin-top: 1rem;
 }

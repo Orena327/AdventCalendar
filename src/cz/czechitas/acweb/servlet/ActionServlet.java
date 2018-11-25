@@ -24,7 +24,9 @@ public class ActionServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		String action = request.getParameter("action"); // value z action
+		String action = request.getParameter("action"); 
+		
+	
  
 		if (action!=null && action.startsWith("day") ) {
 			detailController.handle(request, response);
@@ -36,8 +38,7 @@ public class ActionServlet extends HttpServlet {
 			
 		}
 
-		/*response.getWriter().append("Served at: ").append(request.getContextPath()).append(" Jsem na servletu");*/
-
+		
 	}
 
 	/**

@@ -29,7 +29,7 @@
 </head>
 <body>
 	<div class="main">
-		<%@ include file="header.jsp"%>
+		<%@ include file="header.jsp" %>
 		<div class="flex container__title">
 			<img class="whiteStar " src="img/white-star.png" alt="Bílá hvězda">
 
@@ -78,7 +78,7 @@
 					if (recept.getPostup() != null && recept.getPostup().size() > 0) {
 						for (String paragraph : recept.getPostup()) {
 				%>
-				<p><%=paragraph%></p>
+				<p><%=paragraph %></p>
 				<%
 					}
 					}

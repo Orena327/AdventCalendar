@@ -151,11 +151,15 @@ p,.h3__longText {
 	margin-top:3rem;
 }
 
+/*Filter :Drop-shadow nefunguje pro IE. Řešení je komplikované, lze vyřešit buď dvojími obrázky, popřípadě vybrat jiný efekt...whatever jaký  */
+
 .star:hover {/* prozatím nefunkční, */
-	filter:drop-shadow(5px 5px 3px gray);
-	background-image:url(../img/gold-star-h-1.png);
+	 filter:drop-shadow(5px 5px 3px gray);
+	/* background-image:url(../img/gold-star-h-1.png);  tady tuhle hrůzu bych vymazal a nikdy ji znovu nepoužil*/
 }
-/*img {max-width: 100%;}*/
+
+/* img {max-width: 100%;} */
+
 .person {
     max-height: 15rem;
     padding-left: 1.5rem;
@@ -188,15 +192,23 @@ figure{
 .container2 {	
 	min-height: 43rem;
 	width: 90%;
+	text-align: center;  /*pridano - vycentrovani obsahu na prostredek (hvezdicek) */
 }
 
 .box, box2 {
 	text-align: left;
-	float:left;
+/*	float:left; tohle tam byt nemuze, potom nejsou hvezdicky uprostred*/
 	margin-top: 1rem;
 }
 
-.box {width:50%;}
+/* .box {width:50%;} tohle nedava smysl */
+
+.box {
+	display: inline-block; /*přidáno tak, aby se hvezdičky štosovaly na základě velikosti boxu*/	
+
+}
+
+
 .box2 {
 	width:30%;
 	display: flex;}
@@ -223,10 +235,11 @@ figure{
 }
 
 .star {
-	width:6rem;
+	/* width:6rem; */
 	height:auto;
-	padding:0.5rem;
-	margin:0.5rem 0.7rem;
+	/* padding:0.5rem; neni duvod mit tam padding */
+	/* margin:0.5rem 0.7rem; v soucasnym zobrazeni tohle neni nutne akorat to rozhazuje zobrazeni */
+	margin: 0.5rem;
 	box-shadow:none;
 	border:none;
 	background:none;

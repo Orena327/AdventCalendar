@@ -64,7 +64,7 @@
 						%>
 				</div>
 				<div class="box4">
-					<div class="img"><a href="img/Vanocni_stola.jpg" rel="lightbox[procedure]"><img src="img/nahled<%=recept.getId() %>.png" alt="" title=""/>Nějaký náhled obrázku</a></div>
+					<div class="img"><a href="img/Vanocni_stola.jpg" rel="lightbox[procedure]"><img src="img/nahled<%=recept.getId() %>.jpg" alt="" title=""/>Nějaký náhled obrázku</a></div>
 					
 				</div>
 					

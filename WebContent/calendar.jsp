@@ -29,7 +29,7 @@
 			vydrželi, až do Vánočního dne. Tak neváhej a pusť se do toho rovnou
 			hned.</p>
 
-		<div class="container2">
+<!-- 		<div class="container2">
 			<form action="ActionServlet" method="post" class="container">
 				<% for(int i=0; i<8;i++){ %>
 				<div class="box">
@@ -45,6 +45,21 @@
 				</div><% } %>
 			</form>
 		</div>
+		
+Tady tuhle cast jsem nahradil jednodussim zapisem (za pomoci programatorskyho guru nasi domacnosti...)
+
+-->		
+		<div class="container2">
+			<form action="ActionServlet" method="post" class="container">
+				<% for(int i=0; i<24;i++){ %>
+				<div class="box">
+					<button class="star" type="submit" name="action" id="day<%=i+1 %>" value="day<%=i+1 %>">
+						<img src="img/gold-star-<%=i+1 %>.png" alt="Recept č.<%=i+1 %>">
+					</button>
+				</div><% } %>
+			</form>
+		</div>
+		
 		<%@ include file="footer.jsp"%>
 	</div>
 

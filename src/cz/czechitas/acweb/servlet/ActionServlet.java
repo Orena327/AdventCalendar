@@ -18,6 +18,7 @@ public class ActionServlet extends HttpServlet {
 	private static DetailController detailController = new DetailController();
 
 	public ActionServlet() {
+		/*pro poslani*/
 		super();
 	}
 

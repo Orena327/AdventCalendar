@@ -15,6 +15,7 @@ import cz.czechitas.acweb.bean.Recipe;
 import cz.czechitas.acweb.dao.Dao;
 
 public class DetailController {
+	/*pro poslani*/
 	private final Logger logger = LogManager.getLogger(getClass());
 	private Dao dao = new Dao();
 

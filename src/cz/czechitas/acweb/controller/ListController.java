@@ -16,6 +16,7 @@ import org.apache.logging.log4j.Logger;
 import cz.czechitas.acweb.dao.Dao;
 
 public class ListController {
+	/*pro poslani*/
 	private final Logger logger = LogManager.getLogger(getClass());
 	private Dao dao = new Dao();
 

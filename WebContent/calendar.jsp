@@ -23,7 +23,7 @@
 			<img class="whiteStar" src="img/white-star.png" alt="Bílá hvězda">
 		</div>
 
-		<p>Adventní kalendář každý den nový recept přináší, na tvoji tváří
+		<p class="">Adventní kalendář každý den nový recept přináší, na tvoji tváří
 			úsměv rozzáří. Tak jako u čokoládové verze, otevři každý den jeden,
 			připrav si tak dobroty nejlépe předem. Seřazeny jsou, aby ti
 			vydrželi, až do Vánočního dne. Tak neváhej a pusť se do toho rovnou

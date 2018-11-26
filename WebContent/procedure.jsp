@@ -64,7 +64,7 @@
 						%>
 				</div>
 				<div class="box4">
-					<div class="img"><a href="img/Vanocni_stola.jpg" rel="lightbox[procedure]"><img src="img/nahled<%=recept.getId() %>.jpg" alt="" title=""/>Nějaký náhled obrázku</a></div>
+					<div class="img"><a href="img/original<%=recept.getId() %>.jpg" rel="lightbox[procedure]"><img src="img/nahled<%=recept.getId() %>.jpg" alt="<%=recept.getName()%>" title=""/>Nějaký náhled obrázku</a></div>
 					
 				</div>
 					
@@ -86,8 +86,7 @@
 
 			</div>
 		</div>
-		<%@ include file="footer.jsp"%>
-
-	</div>
+	</div>		
+	<%@ include file="footer.jsp"%>
 </body>
 </html>

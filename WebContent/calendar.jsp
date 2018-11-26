@@ -28,27 +28,7 @@
 			připrav si tak dobroty nejlépe předem. Seřazeny jsou, aby ti
 			vydrželi, až do Vánočního dne. Tak neváhej a pusť se do toho rovnou
 			hned.</p>
-
-<!-- 		<div class="container2">
-			<form action="ActionServlet" method="post" class="container">
-				<% for(int i=0; i<8;i++){ %>
-				<div class="box">
-					<button class="star" type="submit" name="action" id="day<%=3*i+1 %>" value="day<%=3*i+1 %>">
-						<img src="img/gold-star-<%=3*i+1 %>.png" alt="Recept č.<%=3*i+1 %>">
-					</button>
-					<button class="star" type="submit" name="action" id="day<%=3*i+2 %>" value="day<%=3*i+2 %>">
-						<img src="img/gold-star-<%=3*i+2 %>.png" alt="Recept č.<%=3*i+2 %>">
-					</button>
-					<button class="star" type="submit" name="action" id="day<%=3*i+3 %>" value="day<%=3*i+3 %>">
-						<img src="img/gold-star-<%=3*i+3 %>.png" alt="Recept č.3">
-					</button>
-				</div><% } %>
-			</form>
-		</div>
-		
-Tady tuhle cast jsem nahradil jednodussim zapisem (za pomoci programatorskyho guru nasi domacnosti...)
-
--->		
+	
 		<div class="container2">
 			<form action="ActionServlet" method="post" class="container">
 				<% for(int i=0; i<24;i++){ %>

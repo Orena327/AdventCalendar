@@ -5,7 +5,7 @@
 * {
 	margin:0;
 	padding:0;
-	font-family:Quicksand;
+	font-family:Quicksand,sans serif;
 }
 body{
 	width:60%;
@@ -73,6 +73,11 @@ p,.h3__longText {
 	text-align: justify;
 }
 
+.message__error {
+	padding: 3rem 0.5rem 2rem;
+    font-size: 120%;
+    font-weight: 600;
+}
 .center {
 	text-align: center;
 	margin:auto;
@@ -98,15 +103,17 @@ p,.h3__longText {
 	padding:0.5em 1em;	
 	background-image: url(../img/gold-button.png)
 }
+
+.backNav a:hover,.backNav a:active{
+	color:#f5042f;
+}
 .box__backNav {
 	width:100%;
 	backgroung-image:url(img/bg-main.png);
 	padding-top:1rem;
 	padding-bottom:1rem;
 }
-.nav{
-	
-}
+
 .backNav {
 	width:97%;
 	background: #fff;
@@ -152,12 +159,9 @@ p,.h3__longText {
 
 /*Filter :Drop-shadow nefunguje pro IE. Řešení je komplikované, lze vyřešit buď dvojími obrázky, popřípadě vybrat jiný efekt...whatever jaký  */
 
-.star:hover {/* prozatím nefunkční, */
+.star:hover {
 	 filter:drop-shadow(5px 5px 3px gray);
-	/* background-image:url(../img/gold-star-h-1.png);  tady tuhle hrůzu bych vymazal a nikdy ji znovu nepoužil*/
 }
-
-/* img {max-width: 100%;} */
 
 .person {
     max-height: 15rem;
@@ -263,11 +267,24 @@ figure{
 .footer a {
 	padding:none;
 	font-weight: bold;
+	text-decoration:underline;
+}
+
+.footer a:hover{
+	color:#f5042f;
+}
+
+.footer a:active {
+	color:#f74545;
 }
 
 .thanks {
 	padding-bottom:1.5rem;
 }
+.tree{
+	margin-top:2rem;
+}
+
 
 
 

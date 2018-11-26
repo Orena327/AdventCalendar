@@ -8,7 +8,7 @@
 <title>Recepty | Digitální akademie Java 2018</title>
 <meta name="description" content="">
 <meta name="author" content="Ivana Králíčková, Renata Ocelková, Andrea Josieková">
-<link rel="shortcut icon" href="img/favicon1.png"/>
+<link rel="shortcut icon" href="img/favicon7.png"/>
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 <link rel="stylesheet" type="text/css" href="css/fonty.css" media="screen">
 <link rel="stylesheet" type="text/css" href="css/resize.css" media="screen">

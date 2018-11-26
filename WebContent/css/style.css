@@ -83,7 +83,6 @@ p,.h3__longText {
 .flex {
 	display:flex;
 	justify-content:center;
-	/*width: 100%;*/
     margin: auto;
 }
 
@@ -197,11 +196,8 @@ figure{
 
 .box, box2 {
 	text-align: left;
-/*	float:left; tohle tam byt nemuze, potom nejsou hvezdicky uprostred*/
 	margin-top: 1rem;
 }
-
-/* .box {width:50%;} tohle nedava smysl */
 
 .box {
 	display: inline-block; /*přidáno tak, aby se hvezdičky štosovaly na základě velikosti boxu*/	
@@ -235,10 +231,7 @@ figure{
 }
 
 .star {
-	/* width:6rem; */
 	height:auto;
-	/* padding:0.5rem; neni duvod mit tam padding */
-	/* margin:0.5rem 0.7rem; v soucasnym zobrazeni tohle neni nutne akorat to rozhazuje zobrazeni */
 	margin: 0.5rem;
 	box-shadow:none;
 	border:none;

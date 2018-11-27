@@ -82,7 +82,7 @@ public class Dao {
 	       ArrayList<Search> list = new ArrayList<>();
 	       DataSource ds = getDataSource();
 		try (Connection con = ds.getConnection();
-				PreparedStatement stmt = con.prepareStatement("SELECT * FROM recept WHERE id in(SELECT recept_id FROM adventnikalendar.suroviny WHERE nazev LIKE '%?%'")) {
+				PreparedStatement stmt = con.prepareStatement("SELECT * FROM recept WHERE id in(SELECT recept_id FROM adventnikalendar.suroviny WHERE nazev LIKE concat('%',?,'%' ))")) {
 			stmt.setString(1, text);
 			ResultSet rs = stmt.executeQuery();
 			while (rs.next()) {

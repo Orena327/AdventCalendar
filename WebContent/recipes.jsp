@@ -13,6 +13,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" media="screen">
 <link rel="stylesheet" type="text/css" href="css/fonty.css" media="screen">
 <link rel="stylesheet" type="text/css" href="css/resize.css" media="screen">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Parisienne&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
@@ -30,7 +31,10 @@
 			ti vydržely až do&nbsp;Vánočního dne, tak neváhej a&nbsp;pusť se
 			do&nbsp;toho rovnou hned.</p>
 		<div class="linkList container2">
-		
+		<form action="" method="post">
+		<input type="text" name="search" placeholder="Vyhledej podle suroviny"/>
+		<button type="subbmit" name=""><i class="fas fa-search"></i></button>
+		</form>
 		       
 			<ul class="linkList__ul">
 				<div class="box">

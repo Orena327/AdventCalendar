@@ -16,6 +16,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import cz.czechitas.acweb.bean.Recipe;
+import cz.czechitas.acweb.bean.Search;
+
 
 public class Dao {
 	private final Logger logger = LogManager.getLogger(getClass());
@@ -71,6 +73,27 @@ public class Dao {
 			}
 		} catch (SQLException e) {
 			logger.error("listRecipes failed", e);
+		}
+
+		return list;
+	}
+	public List<Search> searchText(String text) {
+			
+	       ArrayList<Search> list = new ArrayList<>();
+	       DataSource ds = getDataSource();
+		try (Connection con = ds.getConnection();
+				PreparedStatement stmt = con.prepareStatement("SELECT * FROM recept WHERE id in(SELECT recept_id FROM adventnikalendar.suroviny WHERE nazev LIKE '%?%'")) {
+			stmt.setString(1, text);
+			ResultSet rs = stmt.executeQuery();
+			while (rs.next()) {
+				 Search s = new Search();
+				s.setName(rs.getString("nazev"));
+				s.setId(rs.getInt("id"));
+				list.add(s);
+				
+			}
+		} catch (SQLException e) {
+			logger.error("searchText failed", e);
 		}
 
 		return list;

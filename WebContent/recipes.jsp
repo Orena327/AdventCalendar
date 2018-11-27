@@ -31,7 +31,9 @@
 			ti vydržely až do&nbsp;Vánočního dne, tak neváhej a&nbsp;pusť se
 			do&nbsp;toho rovnou hned.</p>
 		<div class="linkList container2">
-		<form action="" method="post">
+		<form action="ActionServlet" method="post">
+		<input type="hidden" value="search" name="action">
+		
 		<input type="text" name="search" placeholder="Vyhledej podle suroviny"/>
 		<button type="subbmit" name=""><i class="fas fa-search"></i></button>
 		</form>

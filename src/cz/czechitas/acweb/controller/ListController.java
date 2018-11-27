@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import cz.czechitas.acweb.bean.Search;
 import cz.czechitas.acweb.dao.Dao;
 
 public class ListController {
@@ -29,7 +30,16 @@ public class ListController {
 
 
 		List<String> recepty = dao.listRecipes(monthDay);
-		request.setAttribute("recepty", recepty);
+		ArrayList<Search> atribute = new ArrayList<Search>();
+		int i=0;
+		for(String recept:recepty) {
+			i++;
+			Search s=new Search();
+			s.setName(recept);
+			s.setId(i);
+			atribute.add(s);
+			}
+		request.setAttribute("recepty", atribute);
 		request.getServletContext().getRequestDispatcher("/recipes.jsp").forward(request, response);
 	}
 

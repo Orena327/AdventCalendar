@@ -1,3 +1,4 @@
+<%@page import="cz.czechitas.acweb.bean.Search"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page import="java.util.ArrayList"%>	
@@ -33,32 +34,32 @@
 		       
 			<ul class="linkList__ul">
 				<div class="box">
-				<% ArrayList<String> recepty = (ArrayList<String>) request.getAttribute("recepty");
+				<% ArrayList<Search> recepty = (ArrayList<Search>) request.getAttribute("recepty");
 				if(recepty ==null){%>
 				<jsp:forward page="error.jsp"></jsp:forward>
 				<%
 			}
 			
 				int day = 0;
-        			for(String recept : recepty){
+        			for(Search recept : recepty){
         				day++;
         				if(day % 2 == 1){      					
         		%>	
         			
         		
-					<li>Recept č. <%= day %>: <a
-						href="ActionServlet?action=day<%=day %>"><%= recept %></a></li>
+					<li>Recept č. <%= recept.getId() %>: <a
+						href="ActionServlet?action=day<%=recept.getId() %>"><%= recept.getName() %></a></li>
 						<% }}%>
 				</div>
 				<div class="box">
 				<% 
 					day = 0;
-        			for(String recept : recepty){
+        			for(Search recept : recepty){
         				day++;
         				if(day % 2 == 0){      					
         		%>
-					<li>Recept č. <%= day %>: <a
-						href="ActionServlet?action=day<%=day %>"><%= recept %></a></li>
+					<li>Recept č. <%= recept.getId() %>: <a
+						href="ActionServlet?action=day<%=recept.getId() %>"><%= recept.getName() %></a></li>
 						<% }}%>
 				</div>
 			</ul>

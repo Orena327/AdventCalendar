@@ -24,8 +24,13 @@ public class SearchController {
 			
 			String searchWord = request.getParameter("search");
 			ArrayList<Search> recepty=new ArrayList<Search>();
+			Search a=new Search();
+			a.setName("mouk");
+			a.setId(7);
+			recepty.add(a);
 			
 			request.setAttribute("recepty", recepty);
+			request.setAttribute("word", searchWord);
 			request.getServletContext().getRequestDispatcher("/recipes.jsp").forward(request, response);
 
 		}

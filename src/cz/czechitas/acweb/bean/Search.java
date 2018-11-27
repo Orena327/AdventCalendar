@@ -15,5 +15,8 @@ public class Search {
 	public void setName(String name) {
 		this.name = name;
 	}
+		// TODO Auto-generated method stub
+		
+
 
 }

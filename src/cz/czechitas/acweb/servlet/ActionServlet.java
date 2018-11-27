@@ -10,36 +10,40 @@ import javax.servlet.http.HttpServletResponse;
 
 import cz.czechitas.acweb.controller.DetailController;
 import cz.czechitas.acweb.controller.ListController;
+import cz.czechitas.acweb.controller.SearchController;
 
 @WebServlet("/ActionServlet")
 public class ActionServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private static ListController listController = new ListController();
 	private static DetailController detailController = new DetailController();
+	private static SearchController searchController = new SearchController();
 
 	public ActionServlet() {
-		/*pro poslani*/
+		/* pro poslani */
 		super();
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		String action = request.getParameter("action"); 
+		String action = request.getParameter("action");
 		
-	
- 
-		if (action!=null && action.startsWith("day") ) {
+		if (action != null && action.equals("search")) {
+			searchController.handle(request, response);
+		}
+
+		else if (action != null && action.startsWith("day")) {
 			detailController.handle(request, response);
-			}
-		
+		}
+	
 
 		else {
 			listController.handle(request, response);
-			
+		
+
 		}
 
-		
 	}
 
 	/**

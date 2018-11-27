@@ -292,6 +292,11 @@ figure img{
 .tree{
 	margin-top:2rem;
 }
+.search{
+	color: grey;
+    padding: 0.2em 1em;
+    margin-top:2rem;
+}
 
 
 

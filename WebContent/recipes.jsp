@@ -34,8 +34,8 @@
 		<form action="ActionServlet" method="post">
 		<input type="hidden" value="search" name="action">
 		
-		<input type="text" name="search" placeholder="Vyhledej podle suroviny"/>
-		<button type="subbmit" name=""><i class="fas fa-search"></i></button>
+		<input class="search" type="text" name="search" columns="140" placeholder="Vyhledej podle suroviny"/>
+		<button class="search" type="submit" name=""><i class="fa fa-search"></i> Vyhledej</button>
 		</form>
 		       
 			<ul class="linkList__ul">

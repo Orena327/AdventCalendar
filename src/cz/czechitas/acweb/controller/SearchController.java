@@ -23,11 +23,10 @@ public class SearchController {
 			logger.debug("handle");
 			
 			String searchWord = request.getParameter("search");
-			ArrayList<Search> recepty=new ArrayList<Search>();
-			Search a=new Search();
-			a.setName("mouk");
-			a.setId(7);
-			recepty.add(a);
+			List<Search> recepty=dao.searchText(searchWord);
+			
+			
+			
 			
 			request.setAttribute("recepty", recepty);
 			request.setAttribute("word", searchWord);

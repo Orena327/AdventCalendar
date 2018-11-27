@@ -46,7 +46,11 @@ h2 {
 	font-size:190%;
 }
 .container__title{
-	max-width:40rem;
+	max-width:100%;
+}
+
+.container__title figure{
+	float:left;
 }
 .shortText{
 	width:40rem;
@@ -164,9 +168,9 @@ p,.h3__longText {
 }
 
 .person {
-    max-height: 15rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+	max-height: 15rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-top: 2rem;
 }
 
@@ -176,8 +180,12 @@ figcaption {
 }
 
 figure{	
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;	
+	margin-left: auto;
+    margin-right: auto;
+    width: 33%;	
+}
+figure img{
+	max-width: 70%;
 }
 
 .container,.container2 {

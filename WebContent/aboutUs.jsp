@@ -38,7 +38,7 @@
 		<p></p>
 		<div class="container2">
 			<h2 class="center">Tvůrkyně</h2>
-			<div class="flex container__title">
+			<div class="container__title">
 				<figure>
 					<a href="img/Andrea_Josiekova_500x672.png" rel="lightbox[persons]"><img
 						class="person" src="img/Andrea_Josiekova_500x672.png"
@@ -57,6 +57,7 @@
 						alt="Ivana Králíčková"></a>
 					<figcaption>Ivana Králíčková</figcaption>
 				</figure>
+				<div class="clear"></div>
 			</div>
 			<div>
 				<h2 class="center">Postup</h2>

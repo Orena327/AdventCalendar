@@ -40,20 +40,20 @@
 			<h2 class="center">Tvůrkyně</h2>
 			<div class="container__title">
 				<figure>
-					<a href="img/Andrea_Josiekova_500x672.png" rel="lightbox[persons]"><img
-						class="person" src="img/Andrea_Josiekova_500x672.png"
+					<a href="img/Andrea_Josiekova_500x672.jpg" rel="lightbox[persons]"><img
+						class="person" src="img/Andrea_Josiekova_500x672.jpg"
 						alt="Andrea Josieková"></a>
 					<figcaption>Andrea Josieková</figcaption>
 				</figure>
 				<figure>
-					<a href="img/Renata_Ocelkova_500x672.png" rel="lightbox[persons]"><img
-						class="person" src="img/Renata_Ocelkova_500x672.png"
+					<a href="img/Renata_Ocelkova_500x672.jpg" rel="lightbox[persons]"><img
+						class="person" src="img/Renata_Ocelkova_500x672.jpg"
 						alt="Renáta Ocelková"></a>
 					<figcaption>Renáta Ocelková</figcaption>
 				</figure>
 				<figure>
-					<a href="img/Ivana_Kralickova_500x672.png" rel="lightbox[persons]"><img
-						class="person" src="img/Ivana_Kralickova_500x672.png"
+					<a href="img/Ivana_Kralickova_500x672.jpg" rel="lightbox[persons]"><img
+						class="person" src="img/Ivana_Kralickova_500x672.jpg"
 						alt="Ivana Králíčková"></a>
 					<figcaption>Ivana Králíčková</figcaption>
 				</figure>

@@ -292,10 +292,13 @@ figure img{
 .tree{
 	margin-top:2rem;
 }
-.search{
+.search, .search__product{
 	color: grey;
     padding: 0.2em 1em;
-    margin-top:2rem;
+    margin-top:3rem;
+}
+.search__product{
+	 width: 25%;
 }
 
 

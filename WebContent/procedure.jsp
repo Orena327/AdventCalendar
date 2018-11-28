@@ -64,7 +64,8 @@
 						%>
 				</div>
 				<div class="box4">
-					<div class="img"><a href="img/original<%=recept.getId() %>.jpg" rel="lightbox[procedure]"><img src="img/nahled<%=recept.getId() %>.jpg" alt="<%=recept.getName()%>" title=""/>Nějaký náhled obrázku</a></div>
+					<div class="img"><a href="img/original<%=recept.getId() %>.jpg" rel="lightbox[procedure]"><img src="img/nahled<%=recept.getId() %>.jpg" 
+					alt="<%=recept.getName()%>" title=""/><%=recept.getName()%></a></div>
 					
 				</div>
 					

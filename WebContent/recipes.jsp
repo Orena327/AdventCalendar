@@ -32,9 +32,8 @@
 			do&nbsp;toho rovnou hned.</p>
 		<div class="linkList container2">
 		<form action="ActionServlet" method="post">
-		<input type="hidden" value="search" name="action">
-		
-		<input class="search" type="text" name="search" columns="140" placeholder="Vyhledej podle suroviny"/>
+		<input type="hidden" value="search" name="action">		
+		<input class="search__product" type="text" name="search" placeholder="Vyhledat podle suroviny"/>
 		<button class="search" type="submit" name=""><i class="fa fa-search"></i> Vyhledej</button>
 		</form>
 		       

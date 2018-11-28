@@ -23,11 +23,11 @@
 			<img class="whiteStar" src="img/white-star.png" alt="Bílá hvězda">
 		</div>
 
-		<p class="">Adventní kalendář každý den nový recept přináší, na tvoji tváří
-			úsměv rozzáří. Tak jako u čokoládové verze, otevři každý den jeden,
-			připrav si tak dobroty nejlépe předem. Seřazeny jsou, aby ti
-			vydrželi, až do Vánočního dne. Tak neváhej a pusť se do toho rovnou
-			hned.</p>
+		<p>Adventní kalendář každý den nový recept přináší, na&nbsp;tvoji
+			tváři úsměv rozzáří. Tak jako u&nbsp;čokoládové verze otevři každý
+			den jeden, připrav si tak dobroty nejlépe předem. Seřazeny jsou, aby
+			ti vydržely až do&nbsp;Vánočního dne, tak neváhej a&nbsp;pusť se
+			do&nbsp;toho rovnou hned.</p>
 	
 		<div class="container2">
 			<form action="ActionServlet" method="post" class="container">

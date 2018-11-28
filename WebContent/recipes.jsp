@@ -25,11 +25,7 @@
 			<h1 class="center">Seznam vánočních receptů</h1>
 			<img class="whiteStar" src="img/white-star.png" alt="Bílá hvězda">
 		</div>
-		<p>Adventní kalendář každý den nový recept přináší, na&nbsp;tvoji
-			tváři úsměv rozzáří. Tak jako u&nbsp;čokoládové verze otevři každý
-			den jeden, připrav si tak dobroty nejlépe předem. Seřazeny jsou, aby
-			ti vydržely až do&nbsp;Vánočního dne, tak neváhej a&nbsp;pusť se
-			do&nbsp;toho rovnou hned.</p>
+		<p></p>
 		<div class="linkList container2">
 		<form action="ActionServlet" method="post">
 		<input type="hidden" value="search" name="action">		

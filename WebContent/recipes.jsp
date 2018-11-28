@@ -35,8 +35,7 @@
 		<input type="hidden" value="search" name="action">		
 		<input class="search__product" type="text" name="search" placeholder="Vyhledat podle suroviny"/>
 		<button class="search" type="submit" name=""><i class="fa fa-search"></i> Vyhledej</button>
-		</form>
-		       
+		</form>    
 			<ul class="linkList__ul">
 				<div class="box">
 				<% ArrayList<Search> recepty = (ArrayList<Search>) request.getAttribute("recepty");
@@ -44,14 +43,11 @@
 				<jsp:forward page="error.jsp"></jsp:forward>
 				<%
 			}
-			
 				int day = 0;
         			for(Search recept : recepty){
         				day++;
         				if(day % 2 == 1){      					
         		%>	
-        			
-        		
 					<li>Recept č. <%= recept.getId() %>: <a
 						href="ActionServlet?action=day<%=recept.getId() %>"><%= recept.getName() %></a></li>
 						<% }}%>
@@ -71,6 +67,5 @@
 		</div>
 		<%@ include file="footer.jsp"%>
 	</div>
-
 </body>
 </html>

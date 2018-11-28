@@ -65,14 +65,10 @@
 				</div>
 				<div class="box4">
 					<div class="img"><a href="img/original<%=recept.getId() %>.jpg" rel="lightbox[procedure]"><img src="img/nahled<%=recept.getId() %>.jpg" 
-					alt="<%=recept.getName()%>" title=""/><%=recept.getName()%></a></div>
-					
-				</div>
-					
+					alt="<%=recept.getName()%>" title=""/><%=recept.getName()%></a></div>	
+				</div>	
 				</ul>
-
 				<div class="clear"></div>
-			
 			<h2 class="center">Postup</h2>
 			<div>
 				<%
@@ -84,7 +80,6 @@
 					}
 					}
 				%>
-
 			</div>
 		</div>
 	</div>		

@@ -1,21 +1,44 @@
 @charset "UTF-8";
-@media only screen and (max-width:400px){
-	
-	body{
-		width:100%;
+ 
+@media only screen and (max-width:1200px){
+ 
+ 		body{
+		width:80%;
+		}
+}
+  
+@media only screen and (max-width:900px){
+ 
+ 		body{
+		width:90%;
 		}
 		
-	.backNav ul li{
-	    list-style-type: none;
-	    justify-content: center;
-	    margin-bottom: 5%;
-	    padding-top: 5%;
-	    padding-bottom: 5%;
-	    background-image: url(../img/gold-button.png);
-	    display: inline-block;
-    	width: 90%;    	
-	}
-	.backNav ul li{
-		width:90%;
-	}
 }
+
+@media only screen and (max-width:600px){
+	
+		body{
+			width:100%;
+			}
+			
+		.backNav ul li{
+		    list-style-type: none;
+		    justify-content: center;
+		    margin:0 5% 5% 0;
+		    padding-top: 5%;
+		    padding-bottom: 5%;
+		    background-image: url(../img/gold-button.png);
+		    display: inline-block; 
+		    width: 90%;  	
+		}
+		.backNav ul{
+			display:inline-block;
+			width:100%;
+		}
+		
+		.backNav a{
+			background-image:none;
+			padding:0.5rem 8rem;
+		}
+ }
+

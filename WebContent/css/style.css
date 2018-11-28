@@ -229,8 +229,8 @@ figure img{
 	float:right;
 }
 .img{
-	max-width: 100%;
-    margin: 1rem 0.5rem;
+	max-width: 90%;
+    margin: 0 0.5rem;
 }
 .img img{
 	max-width:90%;
@@ -240,6 +240,7 @@ figure img{
 .box3 li {
 	display:flex;
 	padding-left: 2rem;
+	text-align: left;
 }
 
 .star {

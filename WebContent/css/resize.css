@@ -29,7 +29,7 @@
 		    padding-bottom: 5%;
 		    background-image: url(../img/gold-button.png);
 		    display: inline-block; 
-		    width: 90%;  	
+		    width: 98%;  	
 		}
 		.backNav ul{
 			display:inline-block;
@@ -39,6 +39,9 @@
 		.backNav a{
 			background-image:none;
 			padding:0.5rem 8rem;
+		}
+		.whiteStar{
+			display: none;
 		}
  }
 

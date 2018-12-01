@@ -1,6 +1,7 @@
 package cz.czechitas.acweb.controller;
 
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.ServletException;
@@ -17,6 +18,10 @@ public class SearchController {
 
 	public void handle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		{
+			LocalDate day = LocalDate.now();
+			int monthDay = (day.getDayOfMonth());
+			logger.debug("»Ìslo dne = " + monthDay);
+
 			logger.debug("handle");
 			String searchWord = request.getParameter("search");
 			List<Search> recepty = dao.searchText(searchWord);

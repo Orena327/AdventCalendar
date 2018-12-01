@@ -24,7 +24,7 @@ body{
 /******* FONTY *******/
 
 h1,h2,.backNav a {
-	font-family:"Dancing Script",parisienne,cursive;
+	font-family:"Dancing Script",dancing_script_otregular,parisienne,cursive;
 	font-weight:700;
 	color:#181d36;
 }

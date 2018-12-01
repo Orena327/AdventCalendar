@@ -29,7 +29,7 @@
 </head>
 <body>
 	<div class="main">
-		<%@ include file="header.jsp" %>
+		<%@ include file="header.jsp"%>
 		<div class="flex container__title">
 			<img class="whiteStar " src="img/white-star.png" alt="Bílá hvězda">
 
@@ -37,10 +37,11 @@
 
 				<%
 					Recipe recept = (Recipe) request.getAttribute("recept");
-				if(recept==null){%>
-					<jsp:forward page="error.jsp"></jsp:forward>
-					<%
-				}
+					if (recept == null) {
+				%>
+				<jsp:forward page="error.jsp"></jsp:forward>
+				<%
+					}
 				%>
 
 				<%=recept.getName()%>
@@ -62,27 +63,31 @@
 							}
 							}
 						%>
-				</div>
-				<div class="box4">
-					<div class="img"><a href="img/original<%=recept.getId() %>.jpg" rel="lightbox[procedure]"><img src="img/nahled<%=recept.getId() %>.jpg" 
-					alt="<%=recept.getName()%>" title=""/><%=recept.getName()%></a></div>	
-				</div>	
+					</div>
+					<div class="box4">
+						<div class="img">
+							<a href="img/original<%=recept.getId()%>.jpg"
+								rel="lightbox[procedure]"><img
+								src="img/nahled<%=recept.getId()%>.jpg"
+								alt="<%=recept.getName()%>" title="" /><%=recept.getName()%></a>
+						</div>
+					</div>
 				</ul>
 				<div class="clear"></div>
-			<h2 class="center">Postup</h2>
-			<div>
-				<%
-					if (recept.getPostup() != null && recept.getPostup().size() > 0) {
-						for (String paragraph : recept.getPostup()) {
-				%>
-				<p><%=paragraph %></p>
-				<%
-					}
-					}
-				%>
+				<h2 class="center">Postup</h2>
+				<div>
+					<%
+						if (recept.getPostup() != null && recept.getPostup().size() > 0) {
+							for (String paragraph : recept.getPostup()) {
+					%>
+					<p><%=paragraph%></p>
+					<%
+						}
+						}
+					%>
+				</div>
 			</div>
 		</div>
-	</div>		
-	<%@ include file="footer.jsp"%>
+		<%@ include file="footer.jsp"%>
 </body>
 </html>

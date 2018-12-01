@@ -28,9 +28,8 @@
 		<p></p>
 		<div class="linkList container2">
 		<form action="ActionServlet" method="post">
-		<input type="hidden" value="search" name="action">		
 		<input class="search__product" type="text" name="search" placeholder="Vyhledat podle suroviny"/>
-		<button class="search" type="submit" name=""><i class="fa fa-search"></i> Vyhledej</button>
+		<button class="search" value="search" name="action" type="submit"><i class="fa fa-search"></i> Vyhledej</button>
 		</form>    
 			<ul class="linkList__ul">
 				<div class="box">

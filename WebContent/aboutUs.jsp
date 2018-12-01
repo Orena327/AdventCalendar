@@ -38,7 +38,7 @@
 		<p></p>
 		<div class="container2">
 			<h2 class="center">Tvůrkyně</h2>
-			<div class="container__title">
+			<div class="container__person">
 				<figure>
 					<a href="img/Andrea_Josiekova_500x672.jpg" rel="lightbox[persons]"><img
 						class="person" src="img/Andrea_Josiekova_500x672.jpg"

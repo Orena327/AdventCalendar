@@ -75,13 +75,12 @@
 					„Web jako víno“ (víno můžete v&nbsp;receptu použít jako ingredienci
 					☺). A víte, co je na&nbsp;tomto receptu nejvíce důležité? Mít
 					ochotné pomocníky, správné suroviny a&nbsp;hlavně kvalitní
-					kuchařku. </p>
+					kuchařku.
+				</p>
 				<div class="center thanks">Děkujeme Czechitas.</div>
-
 			</div>
 		</div>
 		<%@ include file="footer.jsp"%>
-
 	</div>
 </body>
 </html>

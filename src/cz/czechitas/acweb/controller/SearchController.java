@@ -2,7 +2,6 @@ package cz.czechitas.acweb.controller;
 
 import java.io.IOException;
 import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -20,7 +19,7 @@ public class SearchController {
 		{
 			LocalDate day = LocalDate.now();
 			int monthDay = (day.getDayOfMonth());
-			logger.debug("��slo dne = " + monthDay);
+			logger.debug("Cislo dne = " + monthDay);
 
 			logger.debug("handle");
 			String searchWord = request.getParameter("search");

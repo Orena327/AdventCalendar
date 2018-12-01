@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.time.LocalDate;
 
 import javax.servlet.ServletException;
-import javax.servlet.ServletRequest;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -15,18 +14,17 @@ import cz.czechitas.acweb.bean.Recipe;
 import cz.czechitas.acweb.dao.Dao;
 
 public class DetailController {
-	/* pro poslani */
 	private final Logger logger = LogManager.getLogger(getClass());
 	private Dao dao = new Dao();
 
 	public void handle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		{
 			logger.debug("handle");
-			LocalDate a = LocalDate.now();
-			int monthDay = (a.getDayOfMonth());
+			LocalDate todayDay = LocalDate.now();
+			int monthDay = (todayDay.getDayOfMonth());
 			String action = request.getParameter("action");
 			String dayNumber = action.substring(3);
-			logger.debug("Èíslo dne = " + dayNumber);
+			logger.debug("Cislo dne = " + dayNumber);
 			int day = Integer.parseInt(dayNumber);
 			if (day > monthDay) {
 				logger.debug("Den je vìtší než " + monthDay);

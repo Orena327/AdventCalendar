@@ -38,6 +38,10 @@
 				<jsp:forward page="error.jsp"></jsp:forward>
 				<%
 			}
+				if(recepty.isEmpty()){%>
+				<p>Do dnešního dne se hledaná surovina v receptech nenachází.</p>
+				<%
+			}
 				int day = 0;
         			for(Search recept : recepty){
         				day++;

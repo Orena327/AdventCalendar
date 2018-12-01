@@ -77,13 +77,14 @@ public class Dao {
 
 		return list;
 	}
-	public List<Search> searchText(String text) {
+	public List<Search> searchText(String text, int day) {
 			
 	       ArrayList<Search> list = new ArrayList<>();
 	       DataSource ds = getDataSource();
 		try (Connection con = ds.getConnection();
-				PreparedStatement stmt = con.prepareStatement("SELECT * FROM recept WHERE id in(SELECT recept_id FROM adventnikalendar.suroviny WHERE nazev LIKE concat('%',?,'%' ))")) {
+				PreparedStatement stmt = con.prepareStatement("SELECT * FROM recept WHERE id in(SELECT recept_id FROM adventnikalendar.suroviny WHERE nazev LIKE concat('%',?,'%') COLLATE utf8mb4_general_ci) AND id <=?")) {
 			stmt.setString(1, text);
+			stmt.setInt(2, day);
 			ResultSet rs = stmt.executeQuery();
 			while (rs.next()) {
 				 Search s = new Search();

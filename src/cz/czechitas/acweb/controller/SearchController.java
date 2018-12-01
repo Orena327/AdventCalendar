@@ -20,11 +20,11 @@ public class SearchController {
 		{
 			LocalDate day = LocalDate.now();
 			int monthDay = (day.getDayOfMonth());
-			logger.debug("Èíslo dne = " + monthDay);
+			logger.debug("ï¿½ï¿½slo dne = " + monthDay);
 
 			logger.debug("handle");
 			String searchWord = request.getParameter("search");
-			List<Search> recepty = dao.searchText(searchWord);
+			List<Search> recepty = dao.searchText(searchWord,monthDay);
 			request.setAttribute("recepty", recepty);
 			request.setAttribute("word", searchWord);
 			request.getServletContext().getRequestDispatcher("/recipes.jsp").forward(request, response);

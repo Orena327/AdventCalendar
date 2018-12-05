@@ -198,7 +198,7 @@ figure img{
 	text-align: center;  /*pridano - vycentrovani obsahu na prostredek (hvezdicek) */
 }
 
-.box, box2 {
+.box, .box2, .box_seznam {
 	text-align: left;
 	margin-top: 1rem;
 }
@@ -207,7 +207,10 @@ figure img{
 	display: inline-block; /*přidáno tak, aby se hvezdičky štosovaly na základě velikosti boxu*/	
 
 }
-
+.box_seznam{
+	display: inline-table;
+	margin-top: 1rem;
+}
 
 .box2 {
 	width:30%;

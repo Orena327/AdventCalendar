@@ -41,7 +41,7 @@
 				</button>
 			</form>
 			<ul class="linkList__ul">
-				<div class="box">
+				<div class="box_seznam">
 					<%
 						ArrayList<Search> recepty = (ArrayList<Search>) request.getAttribute("recepty");
 						if (recepty == null) {
@@ -66,7 +66,7 @@
 						}
 					%>
 				</div>
-				<div class="box">
+				<div class="box_seznam">
 					<%
 						day = 0;
 						for (Search recept : recepty) {
